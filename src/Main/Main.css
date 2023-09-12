@@ -1,0 +1,13 @@
+.containerMain{
+    background-color: #f3f6f8;
+    border-radius: 30px;
+    padding: 30px;
+    overflow: auto;
+}
+.containerMain::-webkit-scrollbar{
+    display: none;
+}
+.searchInput{
+    background-color: white;
+    border: 0px;
+}

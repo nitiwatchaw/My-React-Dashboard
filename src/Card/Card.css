@@ -1,0 +1,140 @@
+.CompactCard {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px;
+    border-radius: 18px;
+    transition-duration: .3s;
+}
+
+.CompactCard .header,
+.CompactCard .content,
+.CompactCard .description {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.CompactCard .content {
+    margin-top: 16px;
+}
+
+.CompactCard .description {
+    margin-top: 6px;
+}
+
+.CompactCard .header i {
+    color: #459a7d;
+    font-size: 25px;
+}
+
+.CompactCard .header h3 {
+    font-size: 16px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+.CompactCard .content p:first-child {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0px;
+}
+
+.CompactCard .content p:nth-child(2) {
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0px;
+    line-height: 24px;
+    align-self: flex-end;
+
+}
+
+.CompactCard .content i {
+    font-size: 15px;
+
+}
+
+.CompactCard .description p {
+    font-size: 15px;
+    color: #a0a0a0;
+    margin: 0px;
+}
+
+.CompactCard:hover {
+    cursor: pointer;
+    background-color: #459a7d;
+    box-shadow: #459a7d 1px 7px 20px -5px;
+
+}
+
+.CompactCard:hover i,
+.CompactCard:hover h3,
+.CompactCard:hover p {
+    color: white !important;
+
+}
+
+.CompactCard:hover .description p {
+    color: rgb(209, 209, 209) !important;
+
+}
+
+.bg {
+    background-color: #13b37d;
+    position: fixed;
+    border-radius: 13px;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+}
+
+.ExpandedCard {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+.ExpandedCard .header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+.ExpandedCard .header span{
+    font-size: 30px;
+}
+.ExpandedCard .header i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.chartContainer{
+    width: 70%;
+    align-self: center;
+    
+}
+#apexcharts1uewb6kr{
+    margin: 0 auto;
+}
+.apexcharts-toolbar{
+    display: none !important;
+}
+
+@media (max-width:1550px){
+    .chartContainer{
+        width: 100%;   
+    }
+}
+@media (max-width:992px){
+    .chartContainer{
+        width: 120%;   
+    }
+}
+@media (max-width:600px){
+    .bg{
+        width: 90%;
+    }
+}

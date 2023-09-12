@@ -1,0 +1,21 @@
+.peopleItem img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+@media (max-width:1550px){
+   
+    .peopleItem img{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media (max-width:700px){
+   
+    .peopleItem img{
+        width: 50px;
+        height: 50px;
+    }
+}
