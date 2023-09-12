@@ -1,18 +1,14 @@
 
 import './App.css'
-import Sidebar from './Sidebar/Sidebar'
-import Main from './Main/Main'
+
+import Dashboard from './Dashboard/Dashboard'
 
 function App() {
 
 
   return (
     <div className='App'>
-      <div className="container">
-        <Sidebar />
-        <Main />
-        
-      </div>
+      <Dashboard />
     </div>
   )
 }

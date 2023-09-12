@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import Logo from '/img/Logo.png'
-import { menuData } from '../Data/Data'
+import { menuData } from '../component/Data/Data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightFromBracket, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -21,11 +21,11 @@ const Sidebar = () => {
     let coverMenuRef = useRef();
 
 
-    const SidebarContent = menuData.map((item, index) => {
+    const SidebarContent = menuData.map((item, id) => {
         return (
-            <div key={index}>
-                <div className={selected === index ? "icon-menu-bar active" : "icon-menu-bar"}
-                    onClick={() => setSelected(index)}>
+            <div key={id}>
+                <div className={selected === id ? "icon-menu-bar active" : "icon-menu-bar"}
+                    onClick={() => setSelected(id)}>
                     <i>{item.icon}</i>
                     <span>
                         {item.heading}
@@ -48,7 +48,7 @@ const Sidebar = () => {
 
                     {/* Menu */}
                     <div className="menu"  >
-                        {SidebarContent}
+                        {SidebarContent }
 
                         {/* button  when mobile */}
                         <div className="bg-button" onClick={handleClick}>

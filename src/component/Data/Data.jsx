@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChartLine, faCartShopping, faTag, faCube, faClock, faPhoneVolume, faGear, faFileLines, faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import Food1 from '/img/foo1.png'
@@ -11,34 +10,52 @@ import p1 from '/img/p1.jpg'
 import p2 from '/img/p2.jpg'
 import p3 from '/img/p3.jpg'
 import p4 from '/img/p4.jpg'
+
+
+
 export const menuData = [
+
     {
+        id: "Dashboard",
         icon: <FontAwesomeIcon icon={faChartLine} />,
-        heading: "Dashboard"
+        heading: "Dashboard",
+   
     },
     {
+        id: "Orders",
         icon: <FontAwesomeIcon icon={faCartShopping} />,
-        heading: "Orders"
+        heading: "Orders",
+      
     },
     {
+        id: "Promotions",
         icon: <FontAwesomeIcon icon={faTag} />,
-        heading: "Promotions"
+        heading: "Promotions",
+       
     },
     {
+        id: "Inventory",
         icon: <FontAwesomeIcon icon={faCube} />,
-        heading: "Inventory"
+        heading: "Inventory",
+       
     },
     {
+        id: "Bussiness Hours",
         icon: <FontAwesomeIcon icon={faClock} />,
-        heading: "Bussiness Hours"
+        heading: "Bussiness Hours",
+     
     },
     {
+        id: "Support",
         icon: <FontAwesomeIcon icon={faPhoneVolume} />,
-        heading: "Support"
+        heading: "Support",
+     
     },
     {
+        id: "Setting",
         icon: <FontAwesomeIcon icon={faGear} />,
-        heading: "Setting"
+        heading: "Setting",
+       
     }
 ]
 
@@ -159,7 +176,7 @@ export const FoodData = [
     },
 ]
 
-export const Datapeople=[
+export const Datapeople = [
     {
         img: p1,
 
