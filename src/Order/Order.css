@@ -1,0 +1,17 @@
+.orderBG {
+    background-color: white;
+}
+
+.wrapper-order {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.box {
+    background-color: white;
+    border-radius: 18px;
+    height: max-content;
+    padding: 20px;
+}

@@ -19,43 +19,44 @@ export const menuData = [
         id: "Dashboard",
         icon: <FontAwesomeIcon icon={faChartLine} />,
         heading: "Dashboard",
-   
+        path: '/'
+
     },
     {
         id: "Orders",
         icon: <FontAwesomeIcon icon={faCartShopping} />,
         heading: "Orders",
-      
+        path: '/order'
     },
     {
         id: "Promotions",
         icon: <FontAwesomeIcon icon={faTag} />,
         heading: "Promotions",
-       
+        path: '/promotion'
     },
     {
         id: "Inventory",
         icon: <FontAwesomeIcon icon={faCube} />,
         heading: "Inventory",
-       
+        path: '/inventory'
     },
     {
         id: "Bussiness Hours",
         icon: <FontAwesomeIcon icon={faClock} />,
         heading: "Bussiness Hours",
-     
+        path: '/bussiness'
     },
     {
         id: "Support",
         icon: <FontAwesomeIcon icon={faPhoneVolume} />,
         heading: "Support",
-     
+        path: '/support'
     },
     {
         id: "Setting",
         icon: <FontAwesomeIcon icon={faGear} />,
         heading: "Setting",
-       
+        path: '/setting'
     }
 ]
 
