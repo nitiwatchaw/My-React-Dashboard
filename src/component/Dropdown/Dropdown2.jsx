@@ -12,13 +12,13 @@ const Dropdown2 = () => {
 
     
     // click outside for close
-    useEffect(() => {
-        document.addEventListener("mousedown", (event) => {
-            if (!menuRef2.current.contains(event.target)) {
-                setOpen(false)
-            }
-        })
-    })
+    // useEffect(() => {
+    //     document.addEventListener("mousedown", (event) => {
+    //         if (!menuRef2.current.contains(event.target)) {
+    //             setOpen(false)
+    //         }
+    //     })
+    // })
 
     const itemData = dropdownData2.map((item, index) => {
         return (

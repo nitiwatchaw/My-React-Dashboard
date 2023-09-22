@@ -27,7 +27,6 @@ const Cards = () => {
                     )
                 })}
 
-
                 <div className='chart-section'>
                     <div className="header">
                         <h3>Sales Analytics</h3>

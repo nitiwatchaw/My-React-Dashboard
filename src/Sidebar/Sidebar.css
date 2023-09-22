@@ -118,6 +118,12 @@
     display: none;
 }
 
+@media (max-width:998px) {
+    .logo-wrap p {
+        font-size: 25px;
+    }
+}
+
 @media (max-width:700px) {
     .cover {
         background-color: #459a7d;
@@ -144,7 +150,8 @@
         color: white;
         font-size: 18px;
     }
-    .bg-button-open{
+
+    .bg-button-open {
         visibility: visible;
         background-color: #459a7d;
         position: fixed;
@@ -156,13 +163,18 @@
         cursor: pointer;
         display: block;
     }
-    .bg-button-open .buttonClose{
-            font-size: 30px;
+
+    .bg-button-open .buttonClose {
+        font-size: 30px;
     }
+
     .none {
         opacity: 0;
         pointer-events: none;
         transform: translatex(-50px);
     }
 
+    .logo-wrap p {
+        font-size: 30px;
+    }
 }

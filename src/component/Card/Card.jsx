@@ -9,7 +9,6 @@ const Card = (props) => {
 
   function CompactCard({ param, setExpanded }) {
 
-
     return (
       <div className="CompactCard" onClick={setExpanded}>
         <div className="header">

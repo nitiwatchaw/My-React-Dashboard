@@ -21,9 +21,7 @@ const Sidebar = () => {
     let coverMenuRef = useRef();
 
     const closeTab = () => {
-        window.opener = null;
         window.open("about:blank", "_self");
-        window.close();
     };
 
     return (
@@ -39,7 +37,6 @@ const Sidebar = () => {
                     </div>
                     {/* Menu */}
                     <div className="menu"  >
-
                         {menuData.map((item, id) => {
                             return (
                                 <div key={id} >
