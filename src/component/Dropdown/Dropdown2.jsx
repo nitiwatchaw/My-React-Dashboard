@@ -7,11 +7,10 @@ import './Dropdown.css'
 import DropdownItem2 from './DropdownItem2'
 const Dropdown2 = () => {
 
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(true)
     let menuRef2 = useRef();
 
-    
-    // click outside for close
+
     // useEffect(() => {
     //     document.addEventListener("mousedown", (event) => {
     //         if (!menuRef2.current.contains(event.target)) {

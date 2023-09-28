@@ -8,7 +8,7 @@ const Promotion = () => {
     const [isActive, setActive] = useState(false);
 
 
-    const handleClick = (e) => {
+    const handleClick = () => {
         setActive(!isActive);
 
     };
@@ -22,7 +22,7 @@ const Promotion = () => {
                 <div className="propmotion-title-wrap">
                     <h4>Coupons</h4>
                     <div className={`wrap-for-mobile ${toggleClassCheck}`} >
-                        <ul l>
+                        <ul>
                             <li><a href="">Most Recent</a></li>
                             <li><a href="">Bussiness</a></li>
                             <li><a href="">Expiration</a></li>

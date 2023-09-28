@@ -9,10 +9,8 @@ import './Sidebar.css'
 
 const Sidebar = () => {
 
-    const [selected, setSelected] = useState(0)
-    const [isActive, setActive] = useState(false);
-
-
+  
+    const [isActive, setActive] = useState(true);
     const handleClick = () => {
         setActive(!isActive);
     };
@@ -40,8 +38,8 @@ const Sidebar = () => {
                         {menuData.map((item, id) => {
                             return (
                                 <div key={id} >
-                                    <NavLink className={selected === id.current ? "icon-menu-bar active" : "icon-menu-bar"}
-                                        onClick={() => setSelected(id)} to={item.path} >
+                                    <NavLink className={id.current ? "icon-menu-bar active" : "icon-menu-bar"}
+                                       to={item.path} >
                                         <i>{item.icon}</i>
                                         <span>
                                             {item.heading}

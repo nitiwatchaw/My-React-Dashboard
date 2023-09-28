@@ -2,9 +2,9 @@ import React from 'react'
 import './Dropdown.css'
 const DropdownItem2 = ({ title }) => {
     return (
-        <li className='dropdownItem'>
+        <div className='dropdownItem'>
             <a href="">{title.title}</a>
-        </li>
+        </div>
     )
 }
 
