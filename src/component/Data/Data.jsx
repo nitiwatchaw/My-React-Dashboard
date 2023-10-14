@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChartLine, faCartShopping, faTag, faCube, faClock, faPhoneVolume, faGear, faFileLines, faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons'
+//dashboard
 import Food1 from '/img/foo1.png'
 import Food2 from '/img/foo2.png'
 import Food3 from '/img/foo3.png'
@@ -11,6 +12,18 @@ import p2 from '/img/p2.jpg'
 import p3 from '/img/p3.jpg'
 import p4 from '/img/p4.jpg'
 
+
+// Inventory
+import invoice from '/img/inv-invoice.png'
+import pack from '/img/inv-pack.png'
+import pick from '/img/inv-pick.png'
+import ship from '/img/inv-ship.png'
+
+import BodyCream from '/img/Body Cream.jpg'
+import ComboPack from '/img/combo-pack.jpg'
+import Neutral from '/img/neutral.jpeg'
+import Serium from '/img/serium.jpeg'
+import DayNight from '/img/Day_Night.jpg'
 
 
 export const menuData = [
@@ -195,3 +208,285 @@ export const Datapeople = [
 
     },
 ]
+export const DataInvPack = [
+    {
+        img: pick,
+        title: "TO BE PACKED",
+        number: "106"
+    },
+    {
+        img: pack,
+        title: "TO BE SHIPPED",
+        number: "6"
+    },
+    {
+        img: ship,
+        title: "TO BE DELIVERED",
+        number: "10"
+    },
+    {
+        img: invoice,
+        title: "TO BE INVOICE",
+        number: "3"
+    },
+]
+
+export const DataSelling = [
+    {
+        img: Serium,
+        title: "Organic Serum",
+        amount: "20,000 pcs"
+    },
+    {
+        img: ComboPack,
+        title: "Combo Pack",
+        amount: "18,004 pcs"
+    },
+    {
+        img: Neutral,
+        title: "Neutrals eye shadow",
+        amount: "16,370 pcs"
+    },
+    {
+        img: BodyCream,
+        title: "Body Cream",
+        amount: "11,850 pcs"
+    },
+    {
+        img: DayNight,
+        title: "Day & Night ",
+        amount: "10,090 pcs"
+    },
+]
+
+export const SaleGraph = {
+
+    series: [44, 55, 41, 17],
+    options: {
+        labels: ['Amsterdam', 'New York', 'Hudson', 'Canandaigua'],
+
+        chart: {
+            type: 'donut',
+        },
+        plotOptions: {
+            pie: {
+                customScale: 1,
+                donut: {
+                    size: '30%',
+
+                }
+            }
+        },
+        stroke: {
+            width: 2,
+        },
+        dataLabels: {
+            enabled: false,
+
+
+        },
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                legend: {
+                    position: 'bottom'
+                },
+            }
+        }],
+
+    },
+}
+
+export const DataFinance =
+{
+
+    series: [{
+        name: 'Cash to Cash Cycle Time',
+        data: [44, 55, 57, 56, 61, 58]
+    }, {
+        name: 'Account Rec Days',
+        data: [76, 85, 101, 98, 87, 105]
+    }, {
+        name: 'Inventory Days',
+        data: [35, 41, 36, 26, 45, 48]
+    },
+    {
+        name: 'Accounts Payable Days',
+        data: [77, 79, 73, 77, 79, 80]
+    }],
+
+    options: {
+        responsive: [
+            {
+                breakpoint: 950,
+                options: {
+                    plotOptions: {
+
+                        bar: {
+                            horizontal: true,
+                            columnWidth: '38%',
+                            endingShape: 'rounded',
+                            borderRadius: 6,
+                            borderRadiusApplication: 'end',
+                        },
+                    },
+                }
+            }
+        ],
+        chart: {
+            type: 'bar',
+            height: 350
+        },
+        plotOptions: {
+
+            bar: {
+                horizontal: false,
+                columnWidth: '38%',
+                endingShape: 'rounded',
+                borderRadius: 6,
+                borderRadiusApplication: 'end',
+            },
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            show: true,
+            width: 2,
+            colors: ['transparent']
+        },
+        xaxis: {
+            categories: ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb'],
+        },
+        yaxis: {
+            title: false,
+
+        },
+        fill: {
+            opacity: 1
+        },
+        tooltip: {
+            y: {
+                formatter: function (val) {
+                    return "$ " + val + " thousands"
+                }
+            }
+        },
+        grid: {
+            borderColor: '#f9f9fb',
+
+        }
+    },
+
+
+
+}
+
+
+
+export const DataInvIncome =
+{
+
+    series: [{
+        name: "Income",
+        data: [50, 201, 35, 151, 509, 362, 269, 469]
+    }],
+    options: {
+        chart: {
+            height: 350,
+            type: 'line',
+            zoom: {
+                enabled: false
+            },
+            dropShadow: {
+                enabled: true,
+                top: 20,
+                left: 0,
+                blur: 1,
+                opacity: 0.2,
+                color: "#189e7d",
+            }
+        },
+        colors: ['#189e7d'],
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth',
+
+        },
+        title: {
+            show: false
+        },
+
+        xaxis: {
+            labels: {
+                show: false
+            },
+
+        },
+        yaxis: {
+            labels: {
+                show: false
+            }
+        },
+        grid: {
+            show: false
+        }
+    },
+
+
+};
+export const DataInvExpense =
+{
+
+    series: [{
+        name: "Expense",
+        data: [50, 201, 35, 151, 509, 362, 269, 469]
+    }],
+    options: {
+        chart: {
+            height: 350,
+            type: 'line',
+            zoom: {
+                enabled: false
+            },
+            dropShadow: {
+                enabled: true,
+                top: 20,
+                left: 0,
+                blur: 1,
+                opacity: 0.2,
+                color: "#fa8182",
+            }
+        },
+        colors: ['#fa8182'],
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth',
+
+        },
+        title: {
+            show: false
+        },
+
+        xaxis: {
+            labels: {
+                show: false
+            },
+
+        },
+        yaxis: {
+            labels: {
+                show: false
+            }
+        },
+        grid: {
+            show: false
+        }
+    },
+
+
+};

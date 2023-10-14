@@ -3,14 +3,13 @@ import Logo from '/img/Logo.png'
 import { menuData } from '../component/Data/Data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightFromBracket, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import { Route, Routes, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Sidebar.css'
 
 
 const Sidebar = () => {
 
-  
-    const [isActive, setActive] = useState(true);
+    const [isActive, setActive] = useState(false);
     const handleClick = () => {
         setActive(!isActive);
     };
@@ -23,23 +22,20 @@ const Sidebar = () => {
     };
 
     return (
-
         <>
-            {/* logo */}
             <div className={`cover ${toggleClassCheck}`} ref={coverMenuRef}>
                 <div className="wrap-menu">
                     <div className='logo-wrap'>
                         <img src={Logo} alt="" />
                         <p>fooddaily</p>
-
                     </div>
-                    {/* Menu */}
+
                     <div className="menu"  >
                         {menuData.map((item, id) => {
                             return (
                                 <div key={id} >
                                     <NavLink className={id.current ? "icon-menu-bar active" : "icon-menu-bar"}
-                                       to={item.path} >
+                                        to={item.path} >
                                         <i>{item.icon}</i>
                                         <span>
                                             {item.heading}

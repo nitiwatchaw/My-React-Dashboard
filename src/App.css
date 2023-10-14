@@ -4,3 +4,9 @@
     padding: 30px;
 }
 
+@media (max-width:567px) {
+    .App{
+        padding: 0px;
+        border-radius: 0px;
+    }
+}

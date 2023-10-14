@@ -11,14 +11,19 @@ const dropdown = () => {
     let menuRef = useRef()
 
 
-    // click outside for close
-    // useEffect(() => {
-    //     document.addEventListener("mousedown", (event) => {
-    //         if (!menuRef.current.contains(event.target)) {
-    //             setOpen(false)
-    //         }
-    //     })
-    // })
+    useEffect(() => {
+        const clickOutside = (event) => {
+            if (!menuRef.current.contains(event.target)) {
+                setOpen(false)
+            }
+        }
+
+        document.body.addEventListener("mousedown", clickOutside)
+        return () => {
+            document.body.removeEventListener("mousedown", clickOutside)
+        }
+    })
+
 
     const itemData = dropdownData.map((item, index) => {
         return <Dropdownitem key={index} itemdata={item} />

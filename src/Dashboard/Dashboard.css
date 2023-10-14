@@ -24,3 +24,12 @@
 
 
 }
+
+@media (max-width:567px) {
+    .container {
+        height: auto;
+        border-radius: 0px;
+    }
+
+
+}

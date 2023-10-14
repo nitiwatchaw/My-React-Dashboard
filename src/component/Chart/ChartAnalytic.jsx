@@ -15,17 +15,17 @@ const ChartAnalytic = () => {
                 height: 350,
                 type: 'area'
             },
-            grid:{
+            grid: {
                 xaxis: {
                     lines: {
                         show: true
                     }
-                },  
+                },
                 yaxis: {
                     lines: {
                         show: false
                     }
-                }, 
+                },
             },
             dataLabels: {
                 enabled: false

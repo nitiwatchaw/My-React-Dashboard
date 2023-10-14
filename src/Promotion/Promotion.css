@@ -1,8 +1,7 @@
-.containerMain {
+.promotion-section {
     display: flex;
     gap: 20px;
     flex-direction: column;
-
 }
 
 .containerMain h1 {
@@ -301,8 +300,13 @@
     .propmotion-title-wrap ul li a:hover{
         border-radius: 3px;
     }
-    .none{
+    .propmotion-title-wrap .none{
         opacity: 0 !important;
         pointer-events: none;
+    }
+}
+@media (max-width:567px) {
+    .promotion-section{
+        padding: 30px 30px 150px 30px;
     }
 }

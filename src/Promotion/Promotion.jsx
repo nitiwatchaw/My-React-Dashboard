@@ -16,7 +16,7 @@ const Promotion = () => {
 
 
     return (
-        <div className='containerMain'>
+        <div className='containerMain promotion-section'>
             <h1>Promotion</h1>
             <div className="wrap-menu-card">
                 <div className="propmotion-title-wrap">

@@ -1,0 +1,44 @@
+.SaleGraph {
+    background-color: white;
+    padding: 20px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.SaleGraph h2 {
+    align-self: flex-start;
+    margin: 0;
+    font-size: 20px;
+    text-align: left;
+}
+
+.apexcharts-legend.apx-legend-position-right {
+    justify-content: space-between !important;
+    bottom: 46px !important;
+    height: 120px !important;
+    right: 25px !important;
+
+}
+
+.apexcharts-legend-series {
+    margin: 0px !important;
+}
+
+.apexcharts-legend-marker {
+    margin-right: 8px !important;
+}
+
+@media(max-width:1430px) {
+    .SaleGraph {
+        grid-column: 1/3;
+    }
+}
+
+@media(max-width:850px) {
+    .SaleGraph {
+        grid-column: 1/2;
+    }
+}

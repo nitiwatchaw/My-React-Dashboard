@@ -11,3 +11,9 @@
     background-color: white;
     border: 0px;
 }
+@media(max-width:567px){
+    .containerMain{
+        border-radius: 0px;
+    }
+   
+}
