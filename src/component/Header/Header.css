@@ -58,6 +58,7 @@ form {
     height: 40px;
     object-fit: cover;
     border-radius: 13px;
+    cursor: pointer;
 }
 
 .wrap-text {
@@ -83,6 +84,7 @@ form {
 .profile-wrap i {
     font-size: 25px;
     position: relative;
+    cursor: pointer;
 }
 
 .profile-wrap i:before {

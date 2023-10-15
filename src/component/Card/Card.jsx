@@ -28,7 +28,7 @@ const Card = (props) => {
   }
 
 
-  
+
   function ExpandedCard({ param, setExpanded }) {
     const data = {
       options: {

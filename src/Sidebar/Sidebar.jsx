@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import Logo from '/img/Logo.png'
 import { menuData } from '../component/Data/Data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,13 +9,7 @@ import './Sidebar.css'
 
 const Sidebar = () => {
 
-    const [isActive, setActive] = useState(false);
-    const handleClick = () => {
-        setActive(!isActive);
-    };
-
-    let toggleClassCheck = isActive ? 'none' : null
-    let coverMenuRef = useRef();
+    const [open, setOpen] = useState(false)
 
     const closeTab = () => {
         window.open("about:blank", "_self");
@@ -23,10 +17,10 @@ const Sidebar = () => {
 
     return (
         <>
-            <div className={`cover ${toggleClassCheck}`} ref={coverMenuRef}>
+            <div className={`cover ${open ? 'none' : ''}`} >
                 <div className="wrap-menu">
                     <div className='logo-wrap'>
-                        <img src={Logo} alt="" />
+                        <img src={Logo} alt="logo icon" />
                         <p>fooddaily</p>
                     </div>
 
@@ -34,7 +28,7 @@ const Sidebar = () => {
                         {menuData.map((item, id) => {
                             return (
                                 <div key={id} >
-                                    <NavLink className={id.current ? "icon-menu-bar active" : "icon-menu-bar"}
+                                    <NavLink className={`${id.current ? " active" : "icon-menu-bar"}`}
                                         to={item.path} >
                                         <i>{item.icon}</i>
                                         <span>
@@ -48,7 +42,7 @@ const Sidebar = () => {
 
 
                         {/* button  when mobile */}
-                        <div className="bg-button" onClick={handleClick}>
+                        <div className="bg-button" onClick={() => { setOpen(!open) }}>
                             <i><FontAwesomeIcon icon={faChevronLeft} className='buttonClose' /></i>
                         </div>
                     </div>
@@ -61,7 +55,7 @@ const Sidebar = () => {
 
             </div >
             {/* button  when mobile */}
-            <div div className="bg-button-open" onClick={handleClick} >
+            <div div className="bg-button-open" onClick={() => { setOpen(!open) }} >
                 <i><FontAwesomeIcon icon={faChevronRight} className='buttonClose' /></i>
             </div >
 

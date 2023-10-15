@@ -47,15 +47,15 @@ const InvSelling = () => {
     return (
         <div className='selling-item-container'>
             <div className="wrap-header">
-                <h2>Top Selling Items</h2>
+                <h2>Other Products Items</h2>
                 <div className="wrap-dropdown" ref={ref} >
                     <button onClick={() => { setOpen(!open) }}>This Month <FontAwesomeIcon icon={faChevronDown} /></button>
                     <ul className={`dropdown  ${open ? "active" : ""}`}>
                         <DropdownItem />
                     </ul>
                     <div className="wrap-svg">
-                        <button onClick={handlescrollLeft}><FontAwesomeIcon icon={faChevronLeft}  /></button>
-                        <button onClick={handlescrollRight}><FontAwesomeIcon icon={faChevronRight}  /></button>
+                        <button onClick={handlescrollLeft}><FontAwesomeIcon icon={faChevronLeft} /></button>
+                        <button onClick={handlescrollRight}><FontAwesomeIcon icon={faChevronRight} /></button>
                     </div>
                 </div>
             </div>

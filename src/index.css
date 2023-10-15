@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto:wght@400;500&family=Ubuntu:ital@1&display=swap');
+
 :root {
   font-family: 'Ubuntu', sans-serif;
   line-height: 1.5;
@@ -14,7 +16,7 @@
 
 a {
   font-weight: 500;
- 
+
   text-decoration: inherit;
 }
 

@@ -25,6 +25,15 @@ import Neutral from '/img/neutral.jpeg'
 import Serium from '/img/serium.jpeg'
 import DayNight from '/img/Day_Night.jpg'
 
+//support
+import landingPage from '/img/landing-page.png'
+import eCommerce from '/img/online-shop.png'
+import personalSale from '/img/agent.png'
+import personalAccount from '/img/registration.png'
+import payments from '/img/wallet.png'
+import additionalService from '/img/add.png'
+import partnerShip from '/img/handshake.png'
+import question from '/img/conversation.png'
 
 export const menuData = [
 
@@ -57,7 +66,7 @@ export const menuData = [
         id: "Bussiness Hours",
         icon: <FontAwesomeIcon icon={faClock} />,
         heading: "Bussiness Hours",
-        path: '/bussiness'
+        path: '/bussinessHour'
     },
     {
         id: "Support",
@@ -111,7 +120,7 @@ export const cardData = [
         series: [
             {
                 name: "Avg. Order Amount",
-                data: [31, 40, 28, 51, 42, 109, 100]
+                data: [87, 123, 54, 61, 42, 188, 43]
             }
         ],
     },
@@ -126,7 +135,7 @@ export const cardData = [
         series: [
             {
                 name: "Unique Customers",
-                data: [31, 40, 28, 51, 42, 109, 100]
+                data: [34, 134, 34, 78, 123, 81, 98]
             }
         ],
     },
@@ -141,7 +150,7 @@ export const cardData = [
         series: [
             {
                 name: "Net Sales",
-                data: [31, 40, 28, 51, 42, 109, 100]
+                data: [78, 122, 70, 60, 42, 109, 65]
             }
         ],
     },
@@ -490,3 +499,42 @@ export const DataInvExpense =
 
 
 };
+
+export const dataSupport =
+    [
+        {
+            img: landingPage,
+            title: "Landing Page"
+
+        },
+        {
+            img: eCommerce,
+            title: "E-commerce"
+        },
+        {
+            img: personalSale,
+            title: "Personal Sale"
+        },
+        {
+            img: personalAccount,
+            title: "Personal Account"
+        },
+        {
+            img: payments,
+            title: "Payments"
+        },
+        {
+            img: additionalService,
+            title: "Additional Services"
+        },
+        {
+            img: partnerShip,
+            title: "Parthership"
+        },
+        {
+            img: question,
+            title: "Other Question"
+        },
+
+
+    ]
