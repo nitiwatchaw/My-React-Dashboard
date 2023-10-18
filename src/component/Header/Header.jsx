@@ -5,12 +5,7 @@ import { faMagnifyingGlass, faMicrophone, faBell } from '@fortawesome/free-solid
 import ProfileImg from '/img/profile.jpg'
 const Header = () => {
 
-    const ProfileData =
-    {
-        img: ProfileImg,
-        Place: "Restaurant",
-        Name: "Tondra"
-    }
+
 
     return (
         <>
@@ -23,10 +18,10 @@ const Header = () => {
                 </form>
 
                 <div className="profile-wrap">
-                    <img src={ProfileData.img} alt="" />
+                    <img src={ProfileImg} alt="" />
                     <div className="wrap-text">
-                        <p>{ProfileData.Place}</p>
-                        <p>{ProfileData.Name}</p>
+                        <p>Restaurant</p>
+                        <p>Cameron</p>
                     </div>
                     <i> <FontAwesomeIcon icon={faBell} /></i>
                 </div>

@@ -1,0 +1,80 @@
+.section-2 {
+    background-color: white;
+    border-radius: 18px;
+    height: auto;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section-2 form {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-2 h5 {
+    font-size: 14px;
+
+}
+
+.section-2 .form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.section-2 .form-container input[type="text"]:focus,
+.section-2 .form-container textarea {
+    outline: none;
+}
+
+.section-2 .form-container input[type="text"] {
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid rgb(189, 189, 189);
+    background-color: white;
+    padding-left: 20px;
+    color: black;
+    font-size: 14px;
+}
+
+.section-2 .form-container textarea {
+    grid-column: 1/3;
+    height: 120px;
+    border-radius: 8px;
+    border: 1px solid rgb(189, 189, 189);
+    background-color: white;
+    padding: 10px 0px 0px 20px;
+    color: black;
+    font-size: 14px;
+}
+
+.section-2 form button {
+    border-radius: 8px;
+    border: 0px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    align-self: flex-end;
+    cursor: pointer;
+    background-color: #5222b5;
+    margin-top: 40px;
+}
+
+
+@media (max-width:998px) {
+    .section-2 .form-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-2 .form-container textarea {
+        grid-column: auto;
+    }
+
+    .section-2 form {
+        gap: 20px;
+    }
+}

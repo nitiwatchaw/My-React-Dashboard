@@ -40,7 +40,6 @@ const Sidebar = () => {
                         })}
 
 
-
                         {/* button  when mobile */}
                         <div className="bg-button" onClick={() => { setOpen(!open) }}>
                             <i><FontAwesomeIcon icon={faChevronLeft} className='buttonClose' /></i>

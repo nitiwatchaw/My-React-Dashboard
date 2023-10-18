@@ -7,9 +7,9 @@ const Support = () => {
         <div className='containerMain support-container'>
             <div className="wrap-header">
                 <h4>How we can help your bussiness?</h4>
-                <form action="seacrh support">
+                <form>
                     <input type="search" placeholder='Search something...' />
-                    <input type="submit" value='Search' />
+                    <button>Search</button>
                     <BsSearch />
                 </form>
             </div>

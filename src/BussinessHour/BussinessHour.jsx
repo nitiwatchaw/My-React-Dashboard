@@ -22,11 +22,11 @@ const BussinessHour = () => {
                     <div className="header">
                         <div className="name-wrap">
                             <label htmlFor="bussinessHour">Name:</label>
-                            <input type="text" placeholder='Default' onChange={() => { setThisValue }} />
+                            <input type="text" placeholder='Default' name='name' onChange={() => { setThisValue }} />
                         </div>
                         <div className="wrap-time">
                             <label htmlFor="html">Timezone:</label>
-                            <input type="text" value="US/Pacific" onChange={() => { setThisValue }} />
+                            <input type="text" value="US/Pacific" name='time' onChange={() => { setThisValue }} />
                         </div>
                     </div>
 
@@ -41,12 +41,12 @@ const BussinessHour = () => {
                                         <label htmlFor="html">Monday</label>
                                     </div>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='monday start' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                     <label htmlFor="html">to</label>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='monday end' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                 </li>
@@ -56,12 +56,12 @@ const BussinessHour = () => {
                                         <label htmlFor="html">Tuesday</label>
                                     </div>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='tuesday start' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                     <label htmlFor="html">to</label>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='tuesday end' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                 </li>
@@ -71,12 +71,12 @@ const BussinessHour = () => {
                                         <label htmlFor="html">Wednesday</label>
                                     </div>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='wednesday start' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                     <label htmlFor="html">to</label>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='wednesday end' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                 </li>
@@ -86,12 +86,12 @@ const BussinessHour = () => {
                                         <label htmlFor="html">Thursday</label>
                                     </div>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='thursday start' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                     <label htmlFor="html">to</label>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='thursday end' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                 </li>
@@ -101,12 +101,12 @@ const BussinessHour = () => {
                                         <label htmlFor="html">Friday</label>
                                     </div>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='friday start' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                     <label htmlFor="html">to</label>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='friday end' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                 </li>
@@ -116,12 +116,12 @@ const BussinessHour = () => {
                                         <label htmlFor="html">Saturday</label>
                                     </div>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='saturday start' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                     <label htmlFor="html">to</label>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='saturday end' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                 </li>
@@ -131,12 +131,12 @@ const BussinessHour = () => {
                                         <label htmlFor="html">Sunday</label>
                                     </div>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='sunday start' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                     <label htmlFor="html">to</label>
                                     <div className="input-wrap">
-                                        <input type="text" value="09:00:00" onChange={() => { setThisValue }} />
+                                        <input type="text" value="09:00:00" name='sunday end' onChange={() => { setThisValue }} />
                                         <AiOutlineClockCircle />
                                     </div>
                                 </li>

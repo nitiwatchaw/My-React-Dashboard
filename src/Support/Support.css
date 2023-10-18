@@ -1,12 +1,12 @@
 .support-container {
-    display: flex;
-    flex-direction: column;
+
     font-family: 'Roboto', sans-serif;
 }
 
 .support-container .wrap-header {
     width: 100%;
     height: 300px;
+    padding: 10px;
     background-color: #459a7d;
     border-radius: 35px;
     display: flex;
@@ -19,6 +19,7 @@
     font-size: 30px;
     margin: 0px;
     color: white;
+    text-align: center;
 }
 
 .support-container .wrap-header form {
@@ -41,11 +42,11 @@
 }
 
 .support-container .wrap-header form input[type="search"]:focus,
-.support-container .wrap-header form input[type="submit"]:focus {
+.support-container .wrap-header form button:focus {
     outline: none;
 }
 
-.support-container .wrap-header form input[type="submit"] {
+.support-container .wrap-header form button {
     cursor: pointer;
     height: 40px;
     border-radius: 35px;
@@ -57,7 +58,7 @@
     background-color: #459a7d;
 }
 
-.support-container .wrap-header form input[type="submit"]:hover {
+.support-container .wrap-header form button:hover {
     filter: brightness(90%);
 }
 
@@ -84,13 +85,14 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    justify-content: center;
 }
 
 .support-container .wrap-main .grid-wrap .item-support {
     display: flex;
-
     flex-direction: column;
     align-items: center;
+    justify-self: center;
     justify-content: center;
     background-color: white;
     width: 160px;
@@ -101,9 +103,29 @@
 }
 
 .support-container .wrap-main .grid-wrap .item-support img {
-    height:60px;
+    height: 60px;
 
 }
-.support-container .wrap-main .grid-wrap .item-support p{
+
+.support-container .wrap-main .grid-wrap .item-support p {
     font-size: 14px;
+}
+
+@media (max-width:998px) {
+    .support-container .wrap-main .grid-wrap {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+@media (max-width:700px) {
+    .support-container .wrap-header form {
+        width: 90%;
+    }
+
+    .support-container .wrap-main .grid-wrap {
+        grid-template-columns: repeat(2, 160px);
+
+    }
 }
