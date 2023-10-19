@@ -37,7 +37,7 @@ const BussinessHour = () => {
                             <ul>
                                 <li>
                                     <div className="wrap-check">
-                                        <input type="checkbox" />
+                                        <input type="checkbox" defaultChecked />
                                         <label htmlFor="html">Monday</label>
                                     </div>
                                     <div className="input-wrap">
@@ -52,7 +52,7 @@ const BussinessHour = () => {
                                 </li>
                                 <li>
                                     <div className="wrap-check">
-                                        <input type="checkbox" />
+                                        <input type="checkbox" defaultChecked />
                                         <label htmlFor="html">Tuesday</label>
                                     </div>
                                     <div className="input-wrap">
@@ -67,7 +67,7 @@ const BussinessHour = () => {
                                 </li>
                                 <li>
                                     <div className="wrap-check">
-                                        <input type="checkbox" />
+                                        <input type="checkbox" defaultChecked/>
                                         <label htmlFor="html">Wednesday</label>
                                     </div>
                                     <div className="input-wrap">

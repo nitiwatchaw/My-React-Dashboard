@@ -25,10 +25,10 @@ const Sidebar = () => {
                     </div>
 
                     <div className="menu"  >
-                        {menuData.map((item, id) => {
+                        {menuData.map((item, e) => {
                             return (
-                                <div key={id} >
-                                    <NavLink className={`${id.current ? " active" : "icon-menu-bar"}`}
+                                <div key={e} >
+                                    <NavLink className={`${e.current ? " active" : "icon-menu-bar"}`}
                                         to={item.path} >
                                         <i>{item.icon}</i>
                                         <span>
