@@ -6,7 +6,7 @@ import { AiOutlineLaptop } from "react-icons/ai";
 import { BiMap, BiDotsVerticalRounded } from "react-icons/bi";
 import { HiPencil } from "react-icons/hi2";
 import { AiFillCaretDown } from "react-icons/ai";
-
+import img from '../../../img/bg-profile.jpg'
 
 
 const Section1 = () => {
